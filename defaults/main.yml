@@ -1,0 +1,4 @@
+---
+# defaults file for kubic
+kubic_apt_name: devel:kubic:libcontainers:stable
+kubic_apt_mirror: download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable

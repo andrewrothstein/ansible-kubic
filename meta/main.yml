@@ -1,0 +1,23 @@
+---
+galaxy_info:
+  author: Andrew Rothstein
+  description: installs Kubic pkgs
+  company: BlackRock Financial Management
+  license:
+    - MIT
+  min_ansible_version: 2.0
+  platforms:
+    - name: Debian
+      versions:
+        - bullseye
+    - name: Ubuntu
+      versions:
+        - bionic
+        - focal
+  galaxy_tags:
+    - development
+  role_name: kubic
+
+dependencies:
+  - role: andrewrothstein.gpg
+    version: v1.0.7

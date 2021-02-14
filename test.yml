@@ -1,0 +1,11 @@
+---
+- hosts: all
+  roles:
+  - role: '{{ playbook_dir }}'
+  tasks:
+    - name: installing buildah and podman
+      package:
+        name:
+          - buildah
+          - podman
+        state: present

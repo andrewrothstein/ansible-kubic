@@ -1,0 +1,3 @@
+---
+kubic_pkg_mgr: apt
+kubic_apt_fqhost: '{{ kubic_apt_mirror }}/{{ kubic_distribution | default(ansible_distribution) }}_{{ kubic_distribution_version | default("10") }}'

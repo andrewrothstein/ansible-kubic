@@ -1,0 +1,14 @@
+---
+- name: add apt key
+  become: yes
+  become_user: root
+  apt_key:
+    url: https://{{ kubic_apt_fqhost }}/Release.key
+    state: present
+- name: add apt repository
+  become: yes
+  become_user: root
+  apt_repository:
+    repo: 'deb http://{{ kubic_apt_fqhost }}/ /'
+    filename: '{{ kubic_apt_name }}'
+    state: present
