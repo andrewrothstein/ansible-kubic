@@ -1,6 +1,6 @@
 andrewrothstein.kubic
 =========
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-kubic.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-kubic)
+![Build Status](https://github.com/andrewrothstein/ansible-kubic/actions/workflows/build.yml/badge.svg)
 
 Installs the Kubic package repo into apt.
 
