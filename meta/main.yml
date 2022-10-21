@@ -14,9 +14,7 @@ galaxy_info:
       versions:
         - bionic
         - focal
+        - jammy
   galaxy_tags:
     - development
   role_name: kubic
-
-dependencies:
-  - andrewrothstein.gpg
