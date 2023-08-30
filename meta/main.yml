@@ -9,10 +9,10 @@ galaxy_info:
   platforms:
     - name: Debian
       versions:
+        - bookworm
         - bullseye
     - name: Ubuntu
       versions:
-        - bionic
         - focal
         - jammy
   galaxy_tags:
