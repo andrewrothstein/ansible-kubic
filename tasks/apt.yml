@@ -1,14 +1,14 @@
 ---
-- name: add apt key
+- name: Add apt key
   become: true
   become_user: root
-  apt_key:
+  ansible.builtin.apt_key:
     url: https://{{ kubic_apt_fqhost }}/Release.key
     state: present
-- name: add apt repository
+- name: Add apt repository
   become: true
   become_user: root
-  apt_repository:
+  ansible.builtin.apt_repository:
     repo: 'deb http://{{ kubic_apt_fqhost }}/ /'
     filename: '{{ kubic_apt_name }}'
     state: present

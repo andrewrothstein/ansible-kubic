@@ -1,3 +1,6 @@
 ---
 kubic_pkg_mgr: apt
-kubic_apt_fqhost: '{{ kubic_apt_mirror }}/x{{ kubic_distribution | default(ansible_distribution) }}_{{ kubic_distribution_version | default(ansible_distribution_version) }}'
+kubic_apt_fqhost: |-
+  {{- kubic_apt_mirror }}/x
+  {{- kubic_distribution | default(ansible_distribution) }}_
+  {{- kubic_distribution_version | default(ansible_distribution_version) -}}

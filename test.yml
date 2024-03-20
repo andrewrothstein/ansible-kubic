@@ -1,12 +1,13 @@
 ---
-- hosts: all
+- name: Testing andrewrothstein.kubic
+  hosts: all
   roles:
     - role: '{{ playbook_dir }}'
   tasks:
-    - name: installing buildah and podman
+    - name: Installing buildah and podman
       become: true
       become_user: root
-      package:
+      ansible.builtin.package:
         name:
           - buildah
           - podman
